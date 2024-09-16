@@ -1,0 +1,17 @@
+services:
+  my_service:
+    image: damo-yolo:latest
+    container_name: damo-yolo
+    volumes:
+      - ./weights:/app/weights
+      - ./demo:/app/demo
+      - ./assets:/app/assets
+      - /home/ubuntu/s3-bucket/datasets:/app/datasets  
+    shm_size: '90gb'
+    ports:
+      - "8888:8888"  # Added port mapping
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
