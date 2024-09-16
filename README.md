@@ -121,13 +121,6 @@ conda install pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=10
 pip install -r requirements.txt
 export PYTHONPATH=$PWD:$PYTHONPATH
 ```
-Step2. Install [pycocotools](https://github.com/cocodataset/cocoapi).
-
-```shell
-pip install cython;
-pip install git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI # for Linux
-pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI # for Windows
-```
 </details>
 
 <details>
